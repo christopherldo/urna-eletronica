@@ -13,8 +13,9 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,6 +60,8 @@ body {
 }
 
 .teclado {
+  display: flex;
+  flex-flow: column;
   margin-top: 15px;
   margin-left: 30px;
   padding: 10px;
@@ -117,10 +120,6 @@ body {
   height: 60px;
   box-shadow: -1px -1px 1px #2e8552;
 }
-
-
-
-
 
 .divisao-1 {
   flex: 1;
@@ -214,10 +213,6 @@ body {
   line-height: 1.6em;
 }
 
-
-
-
-
 .aviso--grande {
   text-transform: uppercase;
   font-size: 40px;
@@ -232,4 +227,52 @@ body {
   align-items: center;
   font-size: 70px;
   font-weight: bold;
+}
+
+@media(max-width: 1199px){
+  .urna{
+    flex-flow: column;
+  }
+  .urna-direita{
+    margin-top: 20px;
+  }
+  .logo{
+    margin-left: 0;
+  }
+  .teclado{
+    margin-left: 0;
+  }
+  .teclado{
+    align-items: center;
+  }
+}
+
+@media(max-width: 767px){
+  .urna{
+    align-items: center;
+  }
+  .tela{
+    width: 350px;
+  }
+}
+
+@media(max-width: 424px){
+  body{
+    padding: 0;
+  }
+  .tela{
+    width: 300px;
+  }
+  .urna{
+    padding: 0;
+  }
+  .teclado{
+    padding: 0;
+  }
+}
+
+@media(max-width: 280px){
+  .tela{
+    width: 250px;
+  }
 }
