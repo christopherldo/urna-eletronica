@@ -1,10 +1,18 @@
-@keyframes pisca{
-  0% {opacity: 0.2;}
-  50% {opacity: 1;}
-  100% {opacity: 0.2;}
+@keyframes pisca {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
 }
 
-body{
+body {
   height: 100vh;
   margin: 0;
   display: flex;
@@ -14,14 +22,14 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.urna{
+.urna {
   border: 1px solid #000;
   background-color: #eee;
   padding: 30px;
   display: flex;
 }
 
-.tela{
+.tela {
   display: flex;
   flex-flow: column;
   width: 622.22px;
@@ -30,12 +38,12 @@ body{
   border: 2px solid #555;
 }
 
-.urna-direita{
+.urna-direita {
   display: flex;
   flex-flow: column;
 }
 
-.logo{
+.logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,33 +54,33 @@ body{
   padding: 0 40px;
 }
 
-.logo img{
+.logo img {
   height: 40px;
 }
 
-.teclado{
+.teclado {
   margin-top: 15px;
   margin-left: 30px;
   padding: 10px;
   background-color: #403a3a;
 }
 
-.teclado--linha{
+.teclado--linha {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-.teclado--linha:last-child{
+.teclado--linha:last-child {
   justify-content: space-between;
   width: 330px;
 }
 
-.teclado--linha:last-child .teclado--botao{
+.teclado--linha:last-child .teclado--botao {
   flex: 1;
 }
 
-.teclado--botao{
+.teclado--botao {
   text-transform: uppercase;
   width: 70px;
   height: 40px;
@@ -87,21 +95,21 @@ body{
   box-shadow: -3px -3px 0px #555;
 }
 
-.botao--branco{
+.botao--branco {
   background-color: #fff;
   color: #000;
   font-size: 15px;
   box-shadow: -1px -1px 1px #ababab;
 }
 
-.botao--corrige{
+.botao--corrige {
   background-color: #f09046;
   color: #000;
   font-size: 15px;
   box-shadow: -1px -1px 1px #c15d10;
 }
 
-.botao--confirma{
+.botao--confirma {
   background-color: #49c17b;
   color: #000;
   font-size: 15px;
@@ -114,26 +122,30 @@ body{
 
 
 
-.divisao-1{
+.divisao-1 {
   flex: 1;
   display: flex;
 }
 
-.divisao-1-left{
+.divisao-1-left {
   flex: 1;
   display: flex;
   flex-flow: column;
   padding-left: 20px;
 }
 
-.left-1{
+.left-1 {
   height: 50px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
 }
 
-.left-2{
+.left-1 span {
+  display: none;
+}
+
+.left-2 {
   height: 50px;
   display: flex;
   margin-left: 100px;
@@ -141,11 +153,12 @@ body{
   text-transform: uppercase;
 }
 
-.left-3{
+.left-3 {
   height: 50px;
+  display: flex;
 }
 
-.numero{
+.numero {
   display: inline-block;
   width: 30px;
   height: 40px;
@@ -155,46 +168,68 @@ body{
   font-size: 25px;
 }
 
-.pisca{
+.pisca {
   animation: pisca 1.5s infinite;
 }
 
-.left-4{
+.left-4 {
   flex: 1;
   display: flex;
   flex-flow: column;
   justify-content: space-around;
 }
 
-.left-4 span{
-  display: block;
+.left-4 span {
+  display: flex;
 }
 
-.divisao-1-right{
+.divisao-1-right {
   width: 90px;
   display: flex;
   flex-flow: column;
   align-items: flex-end;
 }
 
-.divisao-1-image{
+.divisao-1-image {
   border: 1px solid #000;
   background-color: #fff;
   text-align: center;
   font-size: 14px;
 }
 
-.divisao-1-image.small{
+.divisao-1-image.small {
   width: 80%;
   font-size: 12px;
 }
 
-.divisao-1-image img{
+.divisao-1-image img {
   width: 100%;
 }
 
-.divisao-2{
+.divisao-2 {
+  display: none;
   padding: 10px;
   font-size: 14px;
   border-top: 1px solid #000;
+  line-height: 1.6em;
+}
+
+
+
+
+
+.aviso--grande {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.aviso--gigante {
+  flex: 1;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  font-weight: bold;
 }
